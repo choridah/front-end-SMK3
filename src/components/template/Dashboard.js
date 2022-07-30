@@ -1,62 +1,58 @@
 import React from 'react'
+import { CgProfile } from "react-icons/cg";
+import { MdOutlineManageSearch } from "react-icons/md";
 
 const Dashboard = () => {
   return (
     <div>
     {/* ---------------- Navbar -----------------------*/}
-      <nav class="navbar is-white-light" role="navigation" aria-label="main navigation">
-      <div class="navbar-brand">
-        <a class="navbar-item" href="https://bulma.io">
-          <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28"/>
-        </a>
-    
-        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
+      <nav className="navbar is-white-light" role="navigation" aria-label="main navigation">
+      <div className="navbar-brand">
+        <a role="button" href="/dashboard" className="navbar-burger burger mt-2" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+          <div><CgProfile style={{color: '#ffe08a', fontSize: '45px'}}/></div>
         </a>
       </div>
     
-      <div id="navbarBasicExample" class="navbar-menu">
-        <div class="navbar-start">
-          <a class="navbar-item">
+      <div id="navbarBasicExample" href="/" className="navbar-menu">
+        <div href="/" className="navbar-start">
+          <a href="/" className="navbar-item">
             Home
           </a>
     
-          <a class="navbar-item">
+          <a href="/" className="navbar-item">
             Documentation
           </a>
     
-          <div class="navbar-item has-dropdown is-hoverable">
-            <a class="navbar-link">
+          <div href="/" className="navbar-item has-dropdown is-hoverable">
+            <a href="/" className="navbar-link">
               More
             </a>
     
-            <div class="navbar-dropdown">
-              <a class="navbar-item">
+            <div href="/" className="navbar-dropdown">
+              <a href="/" className="navbar-item">
                 About
               </a>
-              <a class="navbar-item">
+              <a href="/" className="navbar-item">
                 Jobs
               </a>
-              <a class="navbar-item">
+              <a href="/" className="navbar-item">
                 Contact
               </a>
-              <hr class="navbar-divider"/>
-              <a class="navbar-item">
+              <hr href="/" className="navbar-divider"/>
+              <a href="/" className="navbar-item">
                 Report an issue
               </a>
             </div>
           </div>
         </div>
     
-        <div class="navbar-end">
-          <div class="navbar-item">
-            <div class="buttons">
-              <a class="button is-primary">
+        <div href="/" className="navbar-end">
+          <div href="/" className="navbar-item">
+            <div href="/" className="buttons">
+              <a href="/" className="button is-primary">
                 <strong>Sign up</strong>
               </a>
-              <a class="button is-light">
+              <a href="/" className="button is-light">
                 Log in
               </a>
             </div>
@@ -68,19 +64,19 @@ const Dashboard = () => {
     {/* ---------------- Body -----------------------*/}
     <div className="container mt-5 mx-5">
       {/* --------------- Create Schedule ------------- */}
-      <button className="button is-warning is-fullwidth">Create Schedule</button>
+      <a href="/" className="btn-input btn-fullwidth text-bold">Create Schedule</a>
       
       {/* --------------- Search ------------- */}
-      <form className="my-5">
-        <input type="text" className="input" placeholder="Search"></input>
-        <button className="button is-warning">=</button>
+      <form className="my-5 col-2-search mr-3">
+        <input type="text" className="col-input" placeholder="Search"></input>
+        <button className="btn-input"><MdOutlineManageSearch style={{fontSize: '45px'}}/></button>
       </form>
 
       {/* --------------- Schedules ------------- */}
       <div className="box">
         <span className="mr-5">31/08/22</span>
-        <span className="mr-5"><a href="#">Schedule 1</a></span>
-        <span><a href="#">Download</a></span>
+        <span className="mr-5"><a href="/schedule:id">Schedule 1</a></span>
+        <span><a href="/">Download</a></span>
       </div>
     </div>
     </div>

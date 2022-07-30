@@ -12,7 +12,7 @@ const Login = () => {
                   <div className="label-sign">LOGIN</div>
                   <hr/>
                   <img src={logoGreskit} alt="Logo Greskit"/>
-                  <from className="mb-5">
+                  <form action="/dashboard" method="" className="mb-5">
                       <div className="field mt-5">
                           <div className="controls">
                               <input type="text" className="col-input" placeholder="Username"></input>
@@ -24,10 +24,10 @@ const Login = () => {
                           </div>
                       </div>
                       <div className="field mt-2 col-2">
-                        <a href="/pass" className="text-smaller mt-2">forgot password?</a>
+                        <a href="/change-password" className="text-smaller mt-2">forgot password?</a>
                         <button className="is-warning btn-input">Login</button>
                       </div>
-                  </from>
+                  </form>
                   <div className="text-center text-smaller text-long-range-top">Doesn't have any account? <a href="/register">Register</a></div>
                 </div>
             </div>
