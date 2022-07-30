@@ -10,49 +10,50 @@ const Register = () => {
             <div className="column is-2-desktop">
                 <div className="box">
                     <img src={logoGreskit} alt="Logo Greskit"/>
-                    <div>REGISTER</div>
+                    <div className="label-sign mt-3">REGISTER</div>
                     <hr/>
                     <from>
                         <div className="field mt-5">
                             <div className="controls">
-                                <input type="text" className="input" placeholder="Full Name"></input>
+                                <input type="text" className="col-input" placeholder="Full Name"></input>
                             </div>
                         </div>
                         <div className="field mt-5">
                             <div className="controls">
-                                <input type="text" className="input" placeholder="Email"></input>
+                                <input type="text" className="col-input" placeholder="Email"></input>
                             </div>
                         </div>
                         <div className="field mt-5">
                             <div className="controls">
-                                <textarea className="textarea" placeholder="Address"></textarea>
+                                <textarea className="col-textarea" placeholder="Address"></textarea>
                             </div>
                         </div>
                         <div className="field mt-5">
                             <div className="controls">
-                                <input type="text" className="input" placeholder="Contact Number"></input>
+                                <input type="text" className="col-input" placeholder="Contact Number"></input>
                             </div>
                         </div>
                         <div className="field mt-5">
                             <div className="controls">
-                                <input type="text" className="input" placeholder="Company"></input>
+                                <input type="text" className="col-input" placeholder="Company"></input>
                             </div>
                         </div>
                         <div className="field mt-5">
                             <div className="controls">
-                                <input type="password" className="input" placeholder="Password"></input>
+                                <input type="password" className="col-input" placeholder="Password"></input>
                             </div>
                         </div>
                         <div className="field mt-5">
                             <div className="controls">
-                                <input type="password" className="input" placeholder="Confirm Password"></input>
+                                <input type="password" className="col-input" placeholder="Confirm Password"></input>
                             </div>
                         </div>
-                        <div className="field mt-5">
-                            <button className="button is-warning">Register</button>
+                        <div className="field mt-2 col-2">
+                            <div></div>
+                            <button className="is-warning btn-input btn-max-content">Register</button>
                         </div>
                     </from>
-                    <span>Already have an account? </span><span><a href="/">Login</a></span>
+                    <div className="text-center text-smaller text-long-range-top">Already have an account? <a href="/">Login</a></div>
                 </div>
             </div>
           </div>

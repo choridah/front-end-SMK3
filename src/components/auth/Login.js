@@ -9,26 +9,26 @@ const Login = () => {
           <div className="column is-centered">
             <div className="column is-4-desktop">
                 <div className="box">
-                    <div>LOGIN</div>
-                    <hr/>
-                    <img src={logoGreskit} alt="Logo Greskit"/>
-                    <from>
-                        <div className="field mt-5">
-                            <div className="controls">
-                                <input type="text" className="input" placeholder="Username"></input>
-                            </div>
-                        </div>
-                        <div className="field mt-5">
-                            <div className="controls">
-                                <input type="password" className="input" placeholder="********"></input>
-                            </div>
-                        </div>
-                        <div className="field mt-5">
-                            <button className="button is-warning is-fullwidth">Login</button>
-                        </div>
-                    </from>
-                    <div>forgot password?</div>
-                    <span>Doesn't have any account? </span><a href="/register">Register</a>
+                  <div className="label-sign">LOGIN</div>
+                  <hr/>
+                  <img src={logoGreskit} alt="Logo Greskit"/>
+                  <from className="mb-5">
+                      <div className="field mt-5">
+                          <div className="controls">
+                              <input type="text" className="col-input" placeholder="Username"></input>
+                          </div>
+                      </div>
+                      <div className="field mt-5">
+                          <div className="controls">
+                              <input type="password" className="col-input" placeholder="********"></input>
+                          </div>
+                      </div>
+                      <div className="field mt-2 col-2">
+                        <a href="/pass" className="text-smaller mt-2">forgot password?</a>
+                        <button className="is-warning btn-input">Login</button>
+                      </div>
+                  </from>
+                  <div className="text-center text-smaller text-long-range-top">Doesn't have any account? <a href="/register">Register</a></div>
                 </div>
             </div>
           </div>
