@@ -1,6 +1,7 @@
 import React from 'react'
 import { CgProfile } from "react-icons/cg";
 import { MdOutlineManageSearch } from "react-icons/md";
+import { FiDownloadCloud } from "react-icons/fi";
 
 const Dashboard = () => {
   return (
@@ -9,7 +10,7 @@ const Dashboard = () => {
       <nav className="navbar is-white-light" role="navigation" aria-label="main navigation">
       <div className="navbar-brand">
         <a role="button" href="/dashboard" className="navbar-burger burger mt-2" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-          <div><CgProfile style={{color: '#ffe08a', fontSize: '45px'}}/></div>
+          <div><CgProfile style={{color: '#FDCB00', fontSize: '45px'}}/></div>
         </a>
       </div>
     
@@ -74,9 +75,11 @@ const Dashboard = () => {
 
       {/* --------------- Schedules ------------- */}
       <div className="box">
-        <span className="mr-5">31/08/22</span>
-        <span className="mr-5"><a href="/schedule:id">Schedule 1</a></span>
-        <span><a href="/">Download</a></span>
+        <div className="col-3">
+          <div>31/08/22</div>
+          <div><a href="/schedule:id">Schedule 1</a></div>
+          <div><a href="/dashboard"><FiDownloadCloud style={{color: '#FDCB00', fontSize: '25px'}}/></a></div>
+        </div>
       </div>
     </div>
     </div>

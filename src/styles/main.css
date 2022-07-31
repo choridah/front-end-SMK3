@@ -50,6 +50,12 @@ img{
     column-gap: 9px;
 }
 
+.col-3{
+    display: grid;
+    grid-template-columns: 30% 60% 10%;
+    column-gap: 5px;
+}
+
 .text-long-range-top{
     margin-top: 75px;
     margin-bottom: 15px;
@@ -64,7 +70,7 @@ img{
 }
 
 .btn-input{
-    background-color: #ffe08a;
+    background-color: #FDCB00;
     border-color: transparent;
     color: rgba(0, 0, 0, 0.7);
     border-width: 1px;
