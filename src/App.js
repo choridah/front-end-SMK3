@@ -1,5 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import "./styles/main.css";
+//import "./styles/main.css";
 import Dashboard from "./components/template/Dashboard";
 import Login from "./components/auth/Login";
 // import Navbar from "./components/navbar/Navbar";
@@ -11,11 +11,11 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route exact path="/" element={ <Login/> } />
-        <Route path="/register" element={ <Register/> } />
-        <Route path="/dashboard" element={ <Dashboard/> } />
-        <Route path="/schedule:id" element={ <Schedule/> } />
-        <Route path="/change-password" element={ <ChangePassword/> } />
+        <Route exact path="/" element={ <Login /> } />
+        <Route path="/register" element={ <Register /> } />
+        <Route path="/dashboard" element={ <Dashboard /> } />
+        <Route path="/schedule:id" element={ <Schedule /> } />
+        <Route path="/change-password" element={ <ChangePassword /> } />
       </Routes>
     </BrowserRouter>
   );

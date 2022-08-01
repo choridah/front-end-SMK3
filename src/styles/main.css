@@ -2,6 +2,9 @@
 
 *{
     font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
 }
 
 .label-sign{
@@ -46,7 +49,7 @@ img{
 
 .col-2-search{
     display: grid;
-    grid-template-columns: 80% 20%;
+    grid-template-columns: 75% 20%;
     column-gap: 9px;
 }
 
@@ -58,11 +61,11 @@ img{
 
 .text-long-range-top{
     margin-top: 75px;
-    margin-bottom: 15px;
 }
 
 .text-center{
     text-align: center;
+    height: 44px;
 }
 
 .text-smaller{
@@ -118,6 +121,7 @@ img{
     display: inline-flex;
     font-size: 1rem;
     height: 2.5em;
+    width: 2.5em;
     line-height: 1.5;
     border-radius: 20px;
 }
@@ -141,9 +145,16 @@ img{
     box-shadow: none;
     display: inline-flex;
     font-size: 1rem;
-    height: 2.5em;
+    height: 7em;
     line-height: 1.5;
     border-radius: 20px;
+    font-weight: bold;
+}
+
+.btn-list-klausa-describe{
+    background-color: white transparent;
+    width: 70%;
+    margin-bottom: 35px;
 }
 
 .btn-fullwidth{
@@ -189,10 +200,62 @@ img{
     width: 175px;
 }
 
+.box{
+    padding: 13px;
+}
+
 .icon-key{
-    font-size: 123px;
-    transform: rotate(39deg);
+    font-size: 129px;
+    transform: rotate(13deg);
     text-align: center;
     margin: 0;
     padding: 0;
+}
+
+hr{
+    background-color: #FDCB00;
+}
+
+.p-modal{
+    padding-left: 10%;
+    padding-right: 20%;
+    padding-top: 33%;
+}
+
+.mx-7{
+    margin-left: 7px;
+    margin-right: 7px;
+}
+
+.modal-backdrop, .fade, .show{
+    opacity: none;
+} 
+
+.modal-backdrop{
+    --bs-backdrop-bg: none;
+}
+
+.col-4, .col-5{
+    padding: 0;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon{
+    width: 44px;
+    height: 44px;
+}
+
+.carousel-caption{
+    color:rgb(0, 0, 0);
+    margin: 0;
+    margin-left: 0px;
+    padding-left: 0px;
+    padding-top: 0px;
+    font-size: x-small;
+}
+
+.carousel-indicators{
+    margin-left: 0;
+    bottom: 0;
+    margin-bottom: 0;
+    height: max-content;
 }

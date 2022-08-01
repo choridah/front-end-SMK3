@@ -1,6 +1,9 @@
 import React from 'react'
 import Navbar from "../navbar/Navbar";
-import CarouselFadeExample from "../carousel/Klausa";
+import CarouselSchedule from "../carousel/Klausa";
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import ChooseAssessment from '../modal/ChooseAssessment';
 
 const Schedule = () => {
   return (
@@ -13,30 +16,20 @@ const Schedule = () => {
       {/* --------------- Back to Schedule ------------- */}
       <a href="/dashboard" className="btn-input btn-fullwidth text-bold">Back to Schedule</a>
       
-      <form action="">
+      <form action="" className="mb-5">
         {/* --------------- Slide Klausa ------------- */}
         <div className="mt-5 mb-5">
-          <span className="button is-warning mr-2"></span>
-          <span className="btn-list-klausa mr-1">1</span>
-          <span className="btn-list-klausa mr-1">2</span>
-          <span className="btn-list-klausa mr-1">3</span>
-          <span className="btn-list-klausa mr-1">4</span>
-          <span className="btn-list-klausa mr-2">5</span>
-          <span className="button is-warning mr-1"></span>
-          <CarouselFadeExample />
+          <CarouselSchedule />
         </div>
         
         {/* --------------- Assessment ------------- */}
         <div>
           <h2 className="mt-5 text-center text-bold">Assessment Result</h2>
-          <ul type="radio" className="mt-3 text-center list-circle">
-            <li className="btn-list mr-3">0</li>
-            <li className="btn-list mr-3">1</li>
-          </ul>
+          <ChooseAssessment />
         </div>
 
         {/* --------------- Reason ------------- */}
-        <div className="field mt-5">
+        <div className="field">
             <div className="controls">
                 <label className="label">Reason</label>
                 <textarea className="col-textarea"></textarea>
@@ -53,10 +46,10 @@ const Schedule = () => {
             </div>
         </div>
         <a href="/">Attachment</a><br/>
-        <div className="field mt-2 col-2">
-          <div></div>
-          <button className="btn-input">Next</button>
-        </div>
+        <Row>
+          <Col xs={8} md={4}></Col>
+          <Col xs={4} md={4}><button className="btn-input">Next</button></Col>
+        </Row>
       </form>
     </div>
     </div>

@@ -1,11 +1,13 @@
 import React from 'react'
 import logoGreskit from "../../img/logo-greskit.png";
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 const Register = () => {
   return (
-    <section class="hero has-background-white-light is-fullheight">
-      <div class="hero-body">
-        <div class="container">
+    <section className="hero has-background-white-light is-fullheight">
+      <div className="hero-body">
+        <div className="container">
           <div className="column is-centered">
             <div className="column is-2-desktop">
                 <div className="box">
@@ -48,10 +50,10 @@ const Register = () => {
                                 <input type="password" className="col-input" placeholder="Confirm Password"></input>
                             </div>
                         </div>
-                        <div className="field mt-2 col-2">
-                            <div></div>
-                            <button className="is-warning btn-input btn-max-content">Register</button>
-                        </div>
+                        <Row>
+                            <Col xs={7}></Col>
+                            <Col xs={5}><button className="btn-input">Register</button></Col>
+                        </Row>
                     </from>
                     <div className="text-center text-smaller text-long-range-top">Already have an account? <a href="/">Login</a></div>
                 </div>
