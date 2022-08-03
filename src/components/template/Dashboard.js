@@ -13,7 +13,7 @@ const Dashboard = () => {
     <Navbar />
 
     {/* ---------------- Body -----------------------*/}
-    <div className="container mt-5 mx-5">
+    <div className="container mx-5">
       {/* --------------- Create Schedule ------------- */}
       <CreateSchedule />
       

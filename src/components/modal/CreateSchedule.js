@@ -53,12 +53,16 @@ function CreateSchedule() {
         <Row>
           <Col xs={6}>
             <Button variant="secondary" onClick={handleClose}>
-              Close
+              <a href="/" className="link-modal-white">
+                Close
+              </a>
             </Button>
           </Col>
           <Col xs={6}>
             <Button variant="warning" onClick={handleClose}>
-              Save
+              <a href="/" className="link-modal-black">
+                Save
+              </a>
             </Button>
           </Col>
         </Row>

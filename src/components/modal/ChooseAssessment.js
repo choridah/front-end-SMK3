@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import Form from 'react-bootstrap/Form';
@@ -13,13 +12,13 @@ function ChooseAssessment() {
 
   return (
     <>
-        <ul type="radio" className="text-center list-circle">
+        <ul className="text-center list-circle">
             <li className="btn-list mx-1">
-                <Button onClick={() => setSmShow(true)} className="btn-list">
-                    0
-                </Button>
+                <input type="radio" name="assessment-result" value="0" placeholder="0" height="44px" className="btn-list mr-1" checked onClick={() => setSmShow(true)} /> 0
             </li>
-            <li className="btn-list mx-1">1</li>
+            <li className="btn-list mx-1">
+                <input type="radio" name="assessment-result" value="1" placeholder="1" height="44px" className="btn-list mr-1" />1
+            </li>
         </ul>
       
         <Modal
@@ -31,24 +30,38 @@ function ChooseAssessment() {
         >
             <Modal.Body>
             <Form>
-                <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-                <Form.Label>Minor</Form.Label>
-                <Row className="mx-7">
-                    <Col xs={6}>
-                        <Form.Control
-                            type="radio"
-                            placeholder="0"
-                            value="0"
-                            autoFocus
-                        />
-                    </Col>
-                    <Col xs={6}>
-                        <Form.Control
-                            type="radio"
-                            placeholder="1"
-                        />
-                    </Col>
-                </Row>
+                <Form.Group controlId="exampleForm.ControlInput1">
+                    <Form.Label>Minor</Form.Label>
+                    <ul className="text-center list-circle">
+                        <li className="btn-list mx-1">
+                            <input type="radio" name="minor" value="0" placeholder="0" height="44px" className="btn-list mr-1" checked onClick={() => setSmShow(true)} /> 0
+                        </li>
+                        <li className="btn-list mx-1">
+                            <input type="radio" name="minor" value="1" placeholder="1" height="44px" className="btn-list mr-1" />1
+                        </li>
+                    </ul>
+                </Form.Group>
+                <Form.Group controlId="exampleForm.ControlInput1">
+                    <Form.Label>Mayor</Form.Label>
+                    <ul className="text-center list-circle">
+                        <li className="btn-list mx-1">
+                            <input type="radio" name="mayor" value="0" placeholder="0" height="44px" className="btn-list mr-1" checked onClick={() => setSmShow(true)} /> 0
+                        </li>
+                        <li className="btn-list mx-1">
+                            <input type="radio" name="mayor" value="1" placeholder="1" height="44px" className="btn-list mr-1" />1
+                        </li>
+                    </ul>
+                </Form.Group>
+                <Form.Group controlId="exampleForm.ControlInput1">
+                    <Form.Label>Kritikal</Form.Label>
+                    <ul className="text-center list-circle">
+                        <li className="btn-list mx-1">
+                            <input type="radio" name="kritikal" value="0" placeholder="0" height="44px" className="btn-list mr-1" checked onClick={() => setSmShow(true)} /> 0
+                        </li>
+                        <li className="btn-list mx-1">
+                            <input type="radio" name="kritikal" value="1" placeholder="1" height="44px" className="btn-list mr-1" />1
+                        </li>
+                    </ul>
                 </Form.Group>
             </Form>
             </Modal.Body>

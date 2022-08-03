@@ -65,7 +65,6 @@ img{
 
 .text-center{
     text-align: center;
-    height: 44px;
 }
 
 .text-smaller{
@@ -102,7 +101,7 @@ img{
 }
 
 .btn-list{
-    background-color: #cbc7c7;
+    background-color: #ffffff;
     border-color: transparent;
     color: rgba(0, 0, 0, 0.7);
     border-width: 1px;
@@ -151,10 +150,21 @@ img{
     font-weight: bold;
 }
 
+.btn-klausa{
+    top: 0;
+    margin-top: 0;
+    margin-left: 11px;
+    margin-bottom: 71px;
+}
+
 .btn-list-klausa-describe{
     background-color: white transparent;
-    width: 70%;
-    margin-bottom: 35px;
+    width: 71%;
+}
+
+.label-klausa{
+    font-size: medium;
+    margin-bottom: 7px;
 }
 
 .btn-fullwidth{
@@ -163,6 +173,23 @@ img{
 
 .btn-max-content{
     max-width: max-content;
+}
+
+.btn-primary{
+    --bs-btn-color: none;
+    --bs-btn-bg: none;
+    --bs-btn-border-color: none;
+    --bs-btn-hover-color: none;
+    --bs-btn-hover-bg: none;
+    --bs-btn-hover-border-color: none;
+    --bs-btn-focus-shadow-rgb: none;
+    --bs-btn-active-color: none;
+    --bs-btn-active-bg: none;
+    --bs-btn-active-border-color: none;
+    --bs-btn-active-shadow: none;
+    --bs-btn-disabled-color: none;
+    --bs-btn-disabled-bg: none;
+    --bs-btn-disabled-border-color: none;
 }
 
 .col-textarea{
@@ -229,11 +256,8 @@ hr{
 
 .modal-backdrop, .fade, .show{
     opacity: none;
+    z-index: 1;
 } 
-
-.modal-backdrop{
-    --bs-backdrop-bg: none;
-}
 
 .col-4, .col-5{
     padding: 0;
@@ -242,6 +266,7 @@ hr{
 .carousel-control-next-icon, .carousel-control-prev-icon{
     width: 44px;
     height: 44px;
+    margin-bottom: 67px;
 }
 
 .carousel-caption{
@@ -258,4 +283,26 @@ hr{
     bottom: 0;
     margin-bottom: 0;
     height: max-content;
+}
+
+.dropdown-toggle-split{
+    padding-left: 21px;
+    padding-top: 0px;
+    padding-bottom: 0;
+}
+
+.dropdown-item{
+    height: 44px;
+}
+
+.link-modal-white{
+    color: white;
+}
+
+.link-modal-black{
+    color: black;
+}
+
+.link-log{
+    color: #FDCB00;
 }

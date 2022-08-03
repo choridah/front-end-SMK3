@@ -12,7 +12,7 @@ const Schedule = () => {
     <Navbar />
 
     {/* ---------------- Body -----------------------*/}
-    <div className="container mt-5 mx-5">
+    <div className="container mx-5">
       {/* --------------- Back to Schedule ------------- */}
       <a href="/dashboard" className="btn-input btn-fullwidth text-bold">Back to Schedule</a>
       
