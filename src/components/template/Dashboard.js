@@ -18,7 +18,7 @@ const Dashboard = () => {
       <CreateSchedule />
       
       {/* --------------- Search ------------- */}
-      <form className="my-5 col-2-search">
+      <form className="my-5 cols-2-search">
         <input type="text" className="col-input" placeholder="Search"></input>
         <button className="btn-input"><MdOutlineManageSearch style={{fontSize: '45px'}}/></button>
       </form>

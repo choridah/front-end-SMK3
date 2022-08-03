@@ -42,12 +42,12 @@ img{
     color: rgb(0, 0, 0);
 }
 
-.col-2{
+.cols-2{
     display: grid;
     grid-template-columns: 60% 40%;
 }
 
-.col-2-search{
+.cols-2-search{
     display: grid;
     grid-template-columns: 75% 20%;
     column-gap: 9px;
@@ -259,7 +259,7 @@ hr{
     z-index: 1;
 } 
 
-.col-4, .col-5{
+.cols-2, .col-2, .col-4, .col-5{
     padding: 0;
 }
 
@@ -285,13 +285,13 @@ hr{
 }
 
 .dropdown-toggle-split{
-    padding-left: 21px;
-    padding-top: 0px;
+    padding-top: 19px;
+    padding-right: 0;
     padding-bottom: 0;
-}
-
-.dropdown-item{
+    padding-left: 0;
+    margin: 0;
     height: 44px;
+    min-width: 44px;
 }
 
 .text-white{
