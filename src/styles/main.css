@@ -266,7 +266,8 @@ hr{
 .carousel-control-next-icon, .carousel-control-prev-icon{
     width: 44px;
     height: 44px;
-    margin-bottom: 67px;
+    margin: 0;
+    padding: 0;
 }
 
 .carousel-caption{
@@ -279,10 +280,8 @@ hr{
 }
 
 .carousel-indicators{
-    margin-left: 0;
-    bottom: 0;
-    margin-bottom: 0;
-    height: max-content;
+    bottom: -13px;
+    margin: 0;
 }
 
 .dropdown-toggle-split{
@@ -295,14 +294,29 @@ hr{
     height: 44px;
 }
 
-.link-modal-white{
+.text-white{
     color: white;
 }
 
-.link-modal-black{
+.text-black{
     color: black;
 }
 
-.link-log{
+.text-log{
     color: #FDCB00;
+}
+
+.box-color{
+    height: 225px;
+    border-radius: 15px;
+    background-color: #FDCB00;
+}
+
+.box-desc{
+    max-width: 300px;
+    min-height: 99px;
+    padding-left: 39px;
+    padding-right: 39px;
+    padding-top: 3px;
+    padding-bottom: 3px;
 }

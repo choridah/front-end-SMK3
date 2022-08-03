@@ -24,7 +24,7 @@ function DropDirectioLogOut() {
                   <a href="/"><FiLogOut style={{color: '#FDCB00', fontSize: '25px'}} /></a>
                 </Col>
                 <Col xs={8}>
-                  <h4 className="link-modal-black text-bold mt-1">Logout</h4>
+                  <h4 className="text-black text-bold mt-1">Logout</h4>
                 </Col>
               </Row>
             </Dropdown.Item>
