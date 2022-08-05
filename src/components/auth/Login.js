@@ -6,7 +6,7 @@ import Col from 'react-bootstrap/Col';
 
 const Login = () => {
   return (
-    <section className="hero has-background-white-light is-fullheight">
+    <section className="hero has-background-white-light is-fullheight" id="#main-content">
       <div className="hero-body">
         <div className="container">
           <div className="column is-centered">

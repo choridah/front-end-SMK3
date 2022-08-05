@@ -69,12 +69,16 @@ function ChooseAssessment() {
             <Row>
             <Col xs={6}>
                 <Button variant="secondary" onClick={handleClose}>
-                Close
+                    <a href="/" className="text-white">
+                        Close
+                    </a>
                 </Button>
             </Col>
             <Col xs={6}>
                 <Button variant="warning" onClick={handleClose}>
-                Save
+                    <a href="/" className="text-black">
+                        Close
+                    </a>
                 </Button>
             </Col>
             </Row>

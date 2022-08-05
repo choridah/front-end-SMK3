@@ -28,7 +28,7 @@ const Dashboard = () => {
         <Row className="mx-7">
           <Col xs={4}>31/08/22</Col>
           <Col xs={6}><a href="/schedule:id">Schedule 1</a></Col>
-          <Col xs={2}><a href="/dashboard"><FiDownloadCloud style={{color: '#FDCB00', fontSize: '35px'}}/></a></Col>
+          <Col xs={2}><a href="/dashboard"><FiDownloadCloud style={{color: '#FDCB00', fontSize: '29px'}}/></a></Col>
         </Row>
       </div>
     </div>

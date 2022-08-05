@@ -1,3 +1,0 @@
-<Button className="btn-input btn-fullwidth text-bold" variant="primary" onClick={() => setModalShow(true)}>
-        Create Schedule
-      </Button>
