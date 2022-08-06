@@ -9,29 +9,29 @@ import Col from 'react-bootstrap/Col';
 const Dashboard = () => {
   return (
     <div>
-    {/* ---------------- Navbar -----------------------*/}
-    <Navbar />
+      {/* ---------------- Navbar -----------------------*/}
+      <Navbar />
 
-    {/* ---------------- Body -----------------------*/}
-    <div className="container mx-5">
-      {/* --------------- Create Schedule ------------- */}
-      <CreateSchedule />
-      
-      {/* --------------- Search ------------- */}
-      <form className="my-5 cols-2-search">
-        <input type="text" className="col-input" placeholder="Search"></input>
-        <button className="btn-input"><MdOutlineManageSearch style={{fontSize: '45px'}}/></button>
-      </form>
+      {/* ---------------- Body -----------------------*/}
+      <div className="container mx-5">
+        {/* --------------- Create Schedule ------------- */}
+        <CreateSchedule />
+        
+        {/* --------------- Search ------------- */}
+        <form className="my-5 cols-2-search">
+          <input type="text" className="col-input" placeholder="Search"></input>
+          <button className="btn-input"><MdOutlineManageSearch style={{fontSize: '45px'}}/></button>
+        </form>
 
-      {/* --------------- Schedules ------------- */}
-      <div className="box">
-        <Row className="mx-7">
-          <Col xs={4}>31/08/22</Col>
-          <Col xs={6}><a href="/schedule:id">Schedule 1</a></Col>
-          <Col xs={2}><a href="/dashboard"><FiDownloadCloud style={{color: '#FDCB00', fontSize: '29px'}}/></a></Col>
-        </Row>
+        {/* --------------- Schedules ------------- */}
+        <div className="box">
+          <Row className="mx-7">
+            <Col xs={4}>31/08/22</Col>
+            <Col xs={6}><a href="/schedule:id">Schedule 1</a></Col>
+            <Col xs={2}><a href="/dashboard"><FiDownloadCloud style={{color: '#FDCB00', fontSize: '23px'}}/></a></Col>
+          </Row>
+        </div>
       </div>
-    </div>
     </div>
   )
 }

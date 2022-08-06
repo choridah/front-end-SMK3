@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">smk3-app</string>
+    <string name="title_activity_main">smk3-app</string>
+    <string name="package_name">com.smk3.app</string>
+    <string name="custom_url_scheme">com.smk3.app</string>
+</resources>
