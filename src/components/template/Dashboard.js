@@ -1,5 +1,5 @@
 import React from 'react'
-import Navbar from "../navbar/Navbar";
+import Navbar from "../bar/Navbar";
 import { MdOutlineManageSearch } from "react-icons/md";
 import { FiDownloadCloud } from "react-icons/fi";
 import CreateSchedule from "../modal/CreateSchedule";

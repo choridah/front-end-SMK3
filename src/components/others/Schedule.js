@@ -1,5 +1,5 @@
 import React from 'react'
-import Navbar from "../navbar/Navbar";
+import Navbar from "../bar/Navbar";
 import CarouselSchedule from "../carousel/Klausa";
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -16,7 +16,7 @@ const Schedule = () => {
       {/* --------------- Back to Schedule ------------- */}
       <a href="/dashboard" className="btn-input btn-fullwidth text-bold">Back to Schedule</a>
       
-      <form action="" className="mb-5">
+      <form action="" method="" className="mb-5">
         {/* --------------- Slide Klausa ------------- */}
         <div className="mt-5 mb-5">
           <CarouselSchedule />
@@ -48,7 +48,7 @@ const Schedule = () => {
         <a href="/">Attachment</a><br/>
         <Row>
           <Col xs={8} md={4}></Col>
-          <Col xs={4} md={4}><button className="btn-input">Next</button></Col>
+          <Col xs={4} md={4}><button type="submit" className="btn-input">Next</button></Col>
         </Row>
       </form>
     </div>

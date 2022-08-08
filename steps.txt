@@ -1,0 +1,7 @@
+npm install -g @ionic/cli
+npm install @capacitor/core @capacitor/cli
+npx cap init
+npm install @capacitor/android
+ionic init
+ionic build
+ionic capacitor build android

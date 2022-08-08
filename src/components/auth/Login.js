@@ -3,6 +3,7 @@ import logoGreskit from "../../img/logo-greskit.png";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Footer from '../bar/Footer';
 
 const Login = () => {
   return (
@@ -15,6 +16,7 @@ const Login = () => {
                   <div className="label-sign">LOGIN</div>
                   <hr/>
                   <img src={logoGreskit} alt="Logo Greskit"/>
+                  <h5 className="text-center mt-2">Sesuai PP 50 Tahun 2012</h5>
                   <form action="/dashboard" method="" className="mb-5">
                       <div className="field mt-5">
                           <div className="controls">
@@ -37,6 +39,7 @@ const Login = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </section>
   )
 }

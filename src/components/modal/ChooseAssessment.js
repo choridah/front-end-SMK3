@@ -68,16 +68,14 @@ function ChooseAssessment() {
             <Modal.Footer>
             <Row>
             <Col xs={6}>
-                <Button variant="secondary" onClick={handleClose}>
-                    <a href="/" className="text-white">
-                        Close
-                    </a>
+                <Button className="text-white" variant="secondary" onClick={handleClose}>
+                    Close
                 </Button>
             </Col>
             <Col xs={6}>
-                <Button variant="warning" onClick={handleClose}>
+                <Button type="submit" variant="warning" onClick={handleClose}>
                     <a href="/" className="text-black">
-                        Close
+                        Save
                     </a>
                 </Button>
             </Col>

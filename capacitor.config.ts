@@ -1,8 +1,8 @@
 import { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'com.smk3.app',
-  appName: 'smk3-app',
+  appId: 'io.ionic.starter',
+  appName: 'smk3',
   webDir: 'build',
   bundledWebRuntime: false
 };

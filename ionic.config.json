@@ -1,5 +1,7 @@
 {
-  "name": "smk3-app",
-  "integrations": {},
+  "name": "smk3",
+  "integrations": {
+    "capacitor": {}
+  },
   "type": "react"
 }

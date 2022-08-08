@@ -296,6 +296,7 @@ hr{
 .carousel-indicators{
     bottom: -13px;
     margin: 0;
+    z-index: 1;
 }
 
 .dropdown-toggle-split{
@@ -333,6 +334,15 @@ hr{
     padding-right: 39px;
     padding-top: 3px;
     padding-bottom: 3px;
+}
+
+.footer{
+    width: 100%;
+    background-color: #FDCB00;
+    padding: 15px;
+    margin: 0;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 
 @media screen and (min-width: 500px) {

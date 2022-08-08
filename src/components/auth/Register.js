@@ -2,6 +2,7 @@ import React from 'react'
 import logoGreskit from "../../img/logo-greskit.png";
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Footer from '../bar/Footer';
 
 const Register = () => {
   return (
@@ -61,6 +62,7 @@ const Register = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </section>
   )
 }
