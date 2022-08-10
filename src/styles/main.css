@@ -294,9 +294,10 @@ hr{
 }
 
 .carousel-indicators{
-    bottom: -13px;
+    top: 0;
     margin: 0;
     z-index: 1;
+    height: max-content;
 }
 
 .dropdown-toggle-split{
@@ -321,19 +322,25 @@ hr{
     color: #FDCB00;
 }
 
+.checkbox{
+    top: 13px;
+}
+
 .box-color{
     height: 225px;
     border-radius: 15px;
     background-color: #FDCB00;
 }
 
-.box-desc{
+p.box-desc{
+    background-color:#FDCB00;
     min-width: 300px;
-    min-height: 50px;
+    max-height: 159px;
     padding-left: 39px;
     padding-right: 39px;
     padding-top: 3px;
     padding-bottom: 3px;
+    overflow: auto;
 }
 
 .footer{

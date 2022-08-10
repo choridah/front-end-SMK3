@@ -1,5 +1,5 @@
 import React from 'react'
-import logoGreskit from "../../img/logo-greskit.png";
+import logoGreskit from "../../img/logo-smk3.png";
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Footer from '../bar/Footer';
@@ -19,6 +19,11 @@ const Register = () => {
                         <div className="field mt-5">
                             <div className="controls">
                                 <input type="text" className="col-input" placeholder="Full Name"></input>
+                            </div>
+                        </div>
+                        <div className="field mt-5">
+                            <div className="controls">
+                                <input type="text" className="col-input" placeholder="Username"></input>
                             </div>
                         </div>
                         <div className="field mt-5">
