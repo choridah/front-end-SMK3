@@ -1,8 +1,8 @@
 import React from 'react'
-import Navbar from "../bar/Navbar";
-import { MdOutlineManageSearch } from "react-icons/md";
-import { FiDownloadCloud } from "react-icons/fi";
-import CreateSchedule from "../modal/CreateSchedule";
+import Navbar from '../bar/Navbar';
+import { MdOutlineManageSearch } from 'react-icons/md';
+import { FiDownloadCloud } from 'react-icons/fi';
+import CreateSchedule from '../modal/CreateSchedule';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 

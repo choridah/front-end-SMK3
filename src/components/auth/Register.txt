@@ -1,0 +1,123 @@
+import { React, useState } from 'react'
+import { Link } from "react-router-dom";
+import logoGreskit from "../../img/logo-smk3.png";
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Footer from '../bar/Footer';
+import axios from 'axios';
+
+const Register = () => {
+    // eslint-disable-next-line no-undef
+    let history = useNavigate();
+    const [data, setData] = useState({
+        full_name:"",
+        username:"",
+        email:"",
+        address:"",
+        contact_number:"",
+        company:"",
+        password:"",
+        confirm_pass:""
+    })
+
+    const handleChange = (e) => {
+        setData({
+            ...data,
+            [e.target.name]: e.target.value
+        });
+        //console.log(data)
+    }
+
+    const submitFormUser = (e) =>{
+        e.preventDefault();
+        const sendData = {
+            full_name: data.full_name,
+            username: data.username,
+            email: data.email,
+            address: data.address,
+            contact_number: data.contact_number,
+            company: data.company,
+            password: data.password,
+            confirm_pass: data.confirm_pass
+        }
+
+        console.log(sendData);
+        axios.post(sendData)
+        .then((result) => {
+            // eslint-disable-next-line eqeqeq
+            if(result.data.Status == 'Invalid') {
+                alert('Invalid User')                
+            } else {
+                // eslint-disable-next-line no-undef
+                history(`/dashboard`);
+            }
+        })
+    }
+    return (
+    <section className="hero has-background-white-light is-fullheight">
+      <div className="hero-body">
+        <div className="container">
+          <div className="column is-centered">
+            <div className="column is-2-desktop">
+                <div className="box">
+                    <img src={logoGreskit} alt="Logo Greskit"/>
+                    <div className="label-sign mt-3">REGISTER</div>
+                    <hr/>
+                    <form onSubmit={ submitFormUser }>
+                        <div className="field mt-5">
+                            <div className="controls">
+                                <input type="text" name="full_name" className="col-input" placeholder="Full Name" onChange={ handleChange } value={ data.full_name } />
+                            </div>
+                        </div>
+                        <div className="field mt-5">
+                            <div className="controls">
+                                <input type="text" name="username" className="col-input" placeholder="Username" onChange={ handleChange } value={ data.username } />
+                            </div>
+                        </div>
+                        <div className="field mt-5">
+                            <div className="controls">
+                                <input type="text" name="email" className="col-input" placeholder="Email" onChange={ handleChange } value={ data.email } />
+                            </div>
+                        </div>
+                        <div className="field mt-5">
+                            <div className="controls">
+                                <textarea name="address" className="col-textarea" placeholder="Address" onChange={ handleChange } value={ data.address } ></textarea>
+                            </div>
+                        </div>
+                        <div className="field mt-5">
+                            <div className="controls">
+                                <input type="text" name="contact_number" className="col-input" placeholder="Contact Number" onChange={ handleChange } value={ data.contact_number } />
+                            </div>
+                        </div>
+                        <div className="field mt-5">
+                            <div className="controls">
+                                <input type="text" name="company" className="col-input" placeholder="Company" onChange={ handleChange } value={ data.company } />
+                            </div>
+                        </div>
+                        <div className="field mt-5">
+                            <div className="controls">
+                                <input type="password" name="password" className="col-input" placeholder="Password" onChange={ handleChange } value={ data.password } />
+                            </div>
+                        </div>
+                        <div className="field mt-5">
+                            <div className="controls">
+                                <input type="password" name="confirm_pass" className="col-input" placeholder="Confirm Password" onChange={ handleChange } value={ data.confirm_pass } />
+                            </div>
+                        </div>
+                        <Row>
+                            <Col xs={7}></Col>
+                            <Col xs={5}><input type="submit" name="submit" value="Register" className="btn-input" /></Col>
+                        </Row>
+                    </form>
+                    <div className="text-center text-smaller text-long-range-top">Already have an account? <Link to="/">Login</Link></div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <Footer />
+    </section>
+  )
+}
+
+export default Register
