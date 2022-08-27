@@ -354,6 +354,25 @@ p.box-desc{
     overflow: auto;
 }
 
+.alert-red{
+    background-color: transparent;
+    border-radius: 15px;
+    color: red;
+    align-items: center;
+    border: none;
+    font-size: 13px;
+    font-weight: bold;
+    width: 100%;
+    min-height: 2em;
+    justify-content: flex-start;
+    padding-bottom: calc(0.5em - 1px);
+    padding-left: calc(1em - 1px);
+    padding-right: calc(1em - 1px);
+    padding-top: calc(0.5em - 1px);
+    position: relative;
+    vertical-align: top;
+}
+
 .footer{
     width: 100%;
     background-color: #FDCB00;

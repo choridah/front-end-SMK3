@@ -1,4 +1,7 @@
-npm install -g @ionic/cli
+npx create-react-app frontend-smk3
+@capacitor/android @capacitor/app @capacitor/core @capacitor/haptics @capacitor/keyboard @capacitor/status-bar @testing-library/jest-dom @testing-library/react @testing-library/user-event axios bootstrap bulma jwt-decode react react-bootstrap react-dom react-icons react-router-dom react-scripts web-vitals
+
+
 npm install @capacitor/core @capacitor/cli
 npx cap init
 npm install @capacitor/android
